@@ -1,0 +1,158 @@
+@import "./colors";
+
+.home{
+    overflow-x: hidden;
+
+    .section-1{
+        height: 550px;
+        background: $AzulPrimary;
+
+        @media screen and(min-width: 768px) {
+            height: 100vh;
+        }
+
+        &__title{
+            color: $BrancoPrimary;
+            padding: 90px 0px 0px 20px;
+            max-width: 30%;
+            line-height: inherit;
+
+            @media screen and(min-width: 768px) {
+               font-size: 70px;
+            }
+
+            @media screen and(min-width: 992px) {
+                font-size: 90px;
+                line-height: normal;
+                position: relative;
+
+                
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 200px;
+                    height: 5px;
+                    top: 124px;
+                    left: -150px;
+                    background: $BrancoPrimary;
+                    z-index: 1;
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 238px;
+                    top: 420px;
+                    margin-left: 13px;
+                    background: $BrancoPrimary;
+                    z-index: 1;
+                }
+             }
+        }
+
+        &__banner{
+       
+
+            @media screen and(min-width: 992px) {
+                position: relative;
+            }
+
+            &--imagem{
+                position: absolute;
+                right: 0;
+                max-width: 70%;
+                margin-top: 20px;
+
+                @media screen and(min-width: 768px) {                  
+                    width: 50%;
+                    margin-top: 280px;
+                    height: 550px;
+                }
+
+                @media screen and(min-width: 992px) {
+                    right: 71px;
+                    width: 62%;
+                    margin-top: 280px;
+                    height: 550px;
+                }
+            }
+        }
+    }
+
+    .section-2{
+
+        &__imagem{
+            
+            display: none;
+
+            @media screen and(min-width: 992px) {
+                display: block;
+                padding-top: 120px;
+
+                img{
+                    height: 350px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &__texto{
+            padding-top: 200px;
+
+            @media screen and(min-width: 992px) {
+                padding-top: 350px;
+            }
+            
+
+            &--description{
+                border-top: 6px solid black;
+                padding-top: 12px;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .section-3{
+
+        margin-top: 80px;
+        background-color: #f5f5f5;
+
+        @media screen and(min-width: 768px) {
+            
+            .container-fluid{
+                padding: 0px;
+            }
+        }
+
+        &__title{
+            text-align: center;
+            padding: 30px 0px;
+
+            @media screen and(min-width: 992px) {
+               text-align: left;
+               margin-left: 50px;
+            }
+        }
+
+        &__bloco{
+
+            padding: 25px 15px;
+
+            @media screen and(min-width: 768px) {
+                padding: 15px 19px;
+            }
+
+
+            @media screen and(min-width: 992px) {
+                padding: 25px;
+                margin-top: 35px;
+            }
+        }
+        
+
+    }
+
+
+}
